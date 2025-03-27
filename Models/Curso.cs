@@ -25,8 +25,7 @@ namespace ExemploExplorando.Models
         {
             return Alunos.Remove(aluno);
         }
-
-        public void ListarAlunos()
+         public void ListarAlunos()
         {
             System.Console.WriteLine($"Alunos do curso de: {Nome}");
             foreach (Pessoa aluno in Alunos)
