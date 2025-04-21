@@ -1,15 +1,78 @@
 ﻿using ExemploExplorando.Models;
 using System.Globalization;
 
+LeituraArquivo arquivo = new LeituraArquivo();
+
+var (sucesso, linhasArquivo, _) = arquivo.LerArquivo("Arquivos/arquivoLeitura.txt");
+
+if (sucesso)
+{
+    //System.Console.WriteLine($"Quantidade de linhas: {quantidadeLinhas}");
+    foreach (var item in linhasArquivo)
+    {
+        System.Console.WriteLine(item);
+    }
+}
+else
+{
+    System.Console.WriteLine($"Erro ao ler o arquivo.");
+}
+ 
 
 
-Dictionary<string, string> estados = new Dictionary<string, string>();
 
-estados.Add("SP", "São Paulo");
-estados.Add("BA", "Bahia");
-estados.Add("MG", "Minas Gerais");
 
-System.Console.WriteLine(estados["MG"]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// (int Id, string Nome, string Sobrenome, decimal Altura) tupla = (1, "Lucas", "Henrique", 1.80M);
+
+// // ValueTuple<int, string, string, decimal> outroExemploTupla = (1, "Lucas", "Henrique", 1.80M);
+// // var outroExemploTuplaCreate = Tuple.Create(1, "Lucas", "Henrique", 1.80M);
+
+// System.Console.WriteLine($"Id: {tupla.Id}");
+// System.Console.WriteLine($"Nome: {tupla.Nome}");
+// System.Console.WriteLine($"Sobrenome: {tupla.Sobrenome}");
+// System.Console.WriteLine($"Altura: {tupla.Altura}");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+///------------------------------------------------------------------------
+// Dictionary<string, string> estados = new Dictionary<string, string>();
+
+// estados.Add("SP", "São Paulo");
+// estados.Add("BA", "Bahia");
+// estados.Add("MG", "Minas Gerais");
+
+// System.Console.WriteLine(estados["MG"]);
 
 // foreach (var item in estados)
 // {
