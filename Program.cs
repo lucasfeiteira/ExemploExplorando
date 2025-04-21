@@ -1,22 +1,73 @@
 ﻿using ExemploExplorando.Models;
 using System.Globalization;
 
-LeituraArquivo arquivo = new LeituraArquivo();
+int numero = 15;
+bool ehpar = false;
 
-var (sucesso, linhasArquivo, _) = arquivo.LerArquivo("Arquivos/arquivoLeitura.txt");
+// IF ternário
+ehpar = numero % 2 == 0;
 
-if (sucesso)
-{
-    //System.Console.WriteLine($"Quantidade de linhas: {quantidadeLinhas}");
-    foreach (var item in linhasArquivo)
-    {
-        System.Console.WriteLine(item);
-    }
-}
-else
-{
-    System.Console.WriteLine($"Erro ao ler o arquivo.");
-}
+System.Console.WriteLine($"O numero {numero} é " + (ehpar ? "par" : "impar"));
+
+// if (numero % 2 == 0)
+// {
+//     System.Console.WriteLine($"O numero {numero} é par");
+// }
+// else
+// {
+//     System.Console.WriteLine($"O numero {numero} é impar");
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+// Pessoa p1 = new Pessoa("Lucas", "Henrique");
+
+// (string nome, string sobrenome) = p1;
+
+// System.Console.WriteLine($"{nome}, {sobrenome}");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// LeituraArquivo arquivo = new LeituraArquivo();
+
+// var (sucesso, linhasArquivo, _) = arquivo.LerArquivo("Arquivos/arquivoLeitura.txt");
+
+// if (sucesso)
+// {
+//     //System.Console.WriteLine($"Quantidade de linhas: {quantidadeLinhas}");
+//     foreach (var item in linhasArquivo)
+//     {
+//         System.Console.WriteLine(item);
+//     }
+// }
+// else
+// {
+//     System.Console.WriteLine($"Erro ao ler o arquivo.");
+// }
  
 
 
