@@ -2,17 +2,168 @@
 using System.Globalization;
 using Newtonsoft.Json;
 
+int a = 10;
 
- string conteudoArquivo = File.ReadAllText("Arquivos/venda.json");
+int b = a;
+b = 60;
 
-List<Venda> listaVendas = JsonConvert.DeserializeObject<List<Venda>>(conteudoArquivo);
+System.Console.WriteLine($"Valor de A: {a}");
 
-var listaAnonimo = listaVendas.Select(x => new { x.Produto, x.Preco });
+System.Console.WriteLine($"Valor de B: {b}");
 
-foreach (var venda in listaAnonimo)
-{
-    Console.WriteLine($"Produto: {venda.Produto}, Preço: {venda.Preco}");
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Pessoa p1 = new Pessoa(nome: "Leonardo", sobrenome: "Buta");
+
+// Pessoa p2 = p1;
+// p2.Nome = "Eduardo";
+
+// System.Console.WriteLine(p1.NomeCompleto);
+// System.Console.WriteLine(p2.NomeCompleto);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//------------------------------------------------------------
+//  int numero = 20;
+//  bool par = false;
+
+// // IF ternário
+//  par = numero.Ehpar();
+
+// string mensagem = "O número " + numero + "" + " é " + (par ? "par" : "impar");
+// Console.WriteLine(mensagem);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// MeuArray<int> arrayInteiro = new MeuArray<int>();
+
+// arrayInteiro.AdicionarElementoArray(30);
+
+// System.Console.WriteLine(arrayInteiro[0]);
+
+// MeuArray<string> arrayString = new MeuArray<string>();
+
+// arrayString.AdicionarElementoArray("tedste");
+
+// System.Console.WriteLine(arrayString[0]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// dynamic variavelDinamica = 4; 
+
+// System.Console.WriteLine($"Tipo da variavel: {variavelDinamica.GetType()}, Valor: {variavelDinamica}");
+
+// variavelDinamica = "texte";
+
+// System.Console.WriteLine($"Tipo da variavel: {variavelDinamica.GetType()}, Valor: {variavelDinamica}");
+
+
+// variavelDinamica = true;
+
+// System.Console.WriteLine($"Tipo da variavel: {variavelDinamica.GetType()}, Valor: {variavelDinamica}");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//  string conteudoArquivo = File.ReadAllText("Arquivos/venda.json");
+
+// List<Venda> listaVendas = JsonConvert.DeserializeObject<List<Venda>>(conteudoArquivo);
+
+// var listaAnonimo = listaVendas.Select(x => new { x.Produto, x.Preco });
+
+// foreach (var venda in listaAnonimo)
+// {
+//     Console.WriteLine($"Produto: {venda.Produto}, Preço: {venda.Preco}");
+// }
 
 
 
