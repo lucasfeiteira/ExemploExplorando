@@ -8,7 +8,7 @@ int b = a;
 b = 60;
 
 System.Console.WriteLine($"Valor de A: {a}");
-
+ 
 System.Console.WriteLine($"Valor de B: {b}");
 
 
